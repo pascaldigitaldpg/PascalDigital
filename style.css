@@ -31,6 +31,27 @@
   .logo {
     font-size: 1.5rem;
     font-weight: 700;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      width: 80px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .logo {
+      font-size: 2rem;
+      display: flex;
+    }
+
+    .logo img {
+      width: 100px;
+    }
   }
   .logo span {
     color: orangered;
@@ -60,7 +81,7 @@
 /* Hero Section */
 .hero {
     background: url('./assets/bg2.jpg') no-repeat center center/cover;
-    padding: 1%;
+    /*padding: 1%;*/
     text-align: center;
 
 }
@@ -69,10 +90,20 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
-    background: rgba(255, 255, 255, 0.411);
+    /* background: rgba(255, 255, 255, 0.411);
+        background: linear-gradient(to right, rgb(255, 117, 67));
+        background-size: 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        background: rgba(255, 68, 0, 0.719);
+    */
+
+    
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.5); /* Orangered shadow */
     width: 100%;
     height: 100%;
   }
@@ -85,16 +116,18 @@
     text-align: left;
 
     h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
         font-weight: 900;
-        background: linear-gradient(to right, rgb(255, 117, 67));
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.568);
-        background-size: 100%;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
+        color: #fff;
+    }
+
+    p{
+      background: #ffffff48;
+      color: #222;
+      font-weight: 600;
+      padding: 1rem;
+      border-radius: 10px;
     }
   }
   .hero-img img {
@@ -185,6 +218,31 @@
     border-radius: 6px;
     cursor: pointer;
   }
+
+  /*-------start-------------*/
+
+  .social-icon {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .social-icon a {
+    font-size: 1.5rem;
+    color: #222;
+    background-color: #ffffff6b;
+    transition: color 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .social-icon a:hover {
+    color: #1b98f5;
+  }
+
+  /*-------end-------------*/
+
   .social-icons {
     margin-top: 2rem;
     display: flex;
