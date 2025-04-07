@@ -216,7 +216,7 @@ body {
 }
 
 .scroll-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.185);
   color: #1b98f5;
   border: none;
   font-weight: 900;
@@ -229,7 +229,8 @@ body {
 }
 
 .scroll-btn:hover {
-  background: #147ec4;
+  background: #ffffff48;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .scroll-btn.left {
