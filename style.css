@@ -94,7 +94,7 @@ body {
   margin-bottom: 1rem;
   font-weight: 900;
   color: #fff;
-  text-align: start;
+  text-align: center;
 }
 
 .hero-text p {
@@ -216,9 +216,11 @@ body {
 }
 
 .scroll-btn {
-  background: #1b98f5;
-  color: white;
+  background: transparent;
+  color: #1b98f5;
   border: none;
+  font-weight: 900;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0.7rem 1rem;
   border-radius: 50%;
   font-size: 1.2rem;
